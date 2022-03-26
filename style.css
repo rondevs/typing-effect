@@ -1,0 +1,36 @@
+#root {
+  background-color: black;
+  color: aliceblue;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5rem;
+}
+
+.input-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 5rem;
+  background-color: white;
+  margin-left: 8px;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/* // Then, inside .input-cursor: */
+.input-cursor {
+  animation: blink 0.6s linear infinite alternate;
+}
